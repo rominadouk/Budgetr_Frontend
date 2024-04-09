@@ -20,7 +20,7 @@ const Navbar = () => {
     
   return (
 
-    <nav className={ `z-50  py-4 h-16 w-full bg-money-green px-5 absolute lg:flex lg:justify-between lg:px-28 ${hamburgerMenuIsOpen ? ' z-50 h-auto pt-4 w-full px-5 absolute lg:bg-transluscent shadow-xl' : '' }`}>
+    <nav className={ `py-4 h-16 w-full bg-money-green px-5 lg:flex lg:justify-between lg:px-28 ${hamburgerMenuIsOpen ? '  h-auto pt-4 w-full px-5  lg:bg-transluscent shadow-xl' : '' }`}>
 
         <div className='flex justify-between'>
             <div className='flex gap-3'>
@@ -42,15 +42,15 @@ const Navbar = () => {
 
         </div>
             {/* Mobile View */}
-                    <div className={`lg:hidden flex  flex-col relative  text-center text-xl  z-100 transition-all duration-300 ease-out transform  ${hamburgerMenuIsOpen ? 'translate-y-2 opacity-100 visible pointer-events-aut pb-3' : 'translate-y-1 opacity-0 invisible pointer-events-none'}`}>
+                    <div className={`lg:hidden flex  flex-col relative  text-center text-xl  transition-all duration-300 ease-out transform  ${hamburgerMenuIsOpen ? 'translate-y-2 opacity-100 visible pointer-events-aut pb-3' : 'translate-y-1 opacity-0 invisible pointer-events-none'}`}>
                         <ul className='flex flex-col gap-5 ' onClick={toggleMobileMenu}>
                             <Link href='/' >
                                 <li>Home</li>
                             </Link>
-                            <Link href='/projects' >
+                            <Link href='s' >
                                 <li>Other Projects</li>
                             </Link>
-                            <Link href='/contact'>
+                            <Link href='/'>
                                 <li>Contact</li>
                             </Link>
                             {/* <Link href='https://www.linkedin.com/in/rominadouk/'  className='self-center' target='_blank'>
@@ -73,10 +73,10 @@ const Navbar = () => {
             <Link href='/' >
                 <li>Home</li>
             </Link>
-            <Link href='/projects'>
+            <Link href='/'>
                 <li>Other Projects</li>
             </Link>
-            <Link href='/contact'>
+            <Link href='/'>
                 <li>Contact</li>
             </Link>
             {/* <Link href='https://www.linkedin.com/in/rominadouk/' target='_blank'>
